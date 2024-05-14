@@ -9,6 +9,5 @@ form.addEventListener("submit", (event) => {
 
   const cadenaInput = Number.parseInt(firstChar.value);
 
-
   div.innerHTML = "<p>" + sumarCadena(cadenaInput) + "</p>";
 });

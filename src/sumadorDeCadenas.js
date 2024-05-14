@@ -1,5 +1,5 @@
 function sumarCadena(cadena) {
-    if (cadena === "") {
+    if (isNaN(cadena)) {
       return 0;
     }
 }
