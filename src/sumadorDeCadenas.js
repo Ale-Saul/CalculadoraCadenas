@@ -1,13 +1,13 @@
 function sumarCadena(cadena) {
     if(cadena === "") 
         return 0;
-    if(cadena.includes(","))
+    if(cadena.includes(",") || cadena.includes("-"))
         return sumar(cadena);
     
     return Number.parseInt(cadena);
 
     function sumar(cadena){
-        const numeros = cadena.split(",");
+        const numeros = cadena.split(/,|-/);
         let suma = 0;
         for (let i = 0; i < numeros.length; i++) {
           console.log(numeros[i]);  
