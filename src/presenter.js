@@ -7,7 +7,7 @@ const div = document.querySelector("#resultado-div");
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const cadenaInput = Number.parseInt(firstChar.value);
+  const cadenaInput = firstChar.value;
 
   div.innerHTML = "<p>" + sumarCadena(cadenaInput) + "</p>";
 });
