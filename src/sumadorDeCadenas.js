@@ -13,7 +13,9 @@ function sumarCadena(cadena) {
         const numeros = cadena.split(/,|-/);
         let suma = 0;
         for (let i = 0; i < numeros.length; i++) {
-          suma += Number.parseInt(numeros[i]);
+            const numero = Number.parseInt(numeros[i]);
+            if(numero < 1000)
+                suma += Number.parseInt(numeros[i]);
         }
         return suma;
     }
@@ -23,7 +25,9 @@ function sumarCadena(cadena) {
         const numeros = cadena.substring(6).split(new RegExp(`,|-|${delimitador}`));
         let suma = 0;
         for (let i = 0; i < numeros.length; i++) {
-          suma += Number.parseInt(numeros[i]);
+            const numero = Number.parseInt(numeros[i]);
+            if(numero < 1000)
+                suma += Number.parseInt(numeros[i]);
         }
         return suma;
     }
