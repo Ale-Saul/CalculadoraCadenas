@@ -10,5 +10,8 @@ describe("Sumar Cadenas", () => {
     it("deberia retornar 3 si la cadena de entrada es 1,2", () =>{
         expect(sumarCadena("1,2")).toEqual(3);
     })
+    it("deberia retornar 6 si la cadena de entrada es 1,2,3", () =>{
+        expect(sumarCadena("1,2,3")).toEqual(6);
+    })
   });
   
