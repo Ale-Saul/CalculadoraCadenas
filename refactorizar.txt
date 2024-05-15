@@ -1,0 +1,4 @@
+1. Cambiar la funcion sumarCadena para que sea mas corta 
+2. Cambiar nombre a la funcion sumar a una mas descriptiva
+3. Cambiar nombre a la funcion sumarPersonalizado
+4. Cambiar nombre al presenter a las variables 
