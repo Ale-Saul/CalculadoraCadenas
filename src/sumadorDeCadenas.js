@@ -2,7 +2,7 @@ function sumarCadena(cadena) {
     if(cadena === "") 
         return 0;
     if(cadena.startsWith("//"))
-        return sumarPersonalizado(cadena);
+        return obtenerSumaSeparadorPersonalizado(cadena);
     if(cadena.includes(",") || cadena.includes("-"))
         return sumar(cadena);
 
@@ -19,7 +19,7 @@ function sumar(cadena){
     return suma;
 }
 
-function sumarPersonalizado(cadena){
+function obtenerSumaSeparadorPersonalizado(cadena){
     const delimitador = cadena.substring(3, 4);
     const numeros = cadena.substring(6).split(new RegExp(`,|-|${delimitador}`));
     let suma = 0;
