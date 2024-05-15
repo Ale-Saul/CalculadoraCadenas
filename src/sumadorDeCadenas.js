@@ -4,11 +4,11 @@ function sumarCadena(cadena) {
     if(cadena.startsWith("//"))
         return obtenerSumaSeparadorPersonalizado(cadena);
     if(cadena.includes(",") || cadena.includes("-"))
-        return sumar(cadena);
+        return obtenerSuma(cadena);
 
     return Number.parseInt(cadena);
 }
-function sumar(cadena){
+function obtenerSuma(cadena){
     const numeros = cadena.split(/,|-/);
     let suma = 0;
     for (let i = 0; i < numeros.length; i++) {
